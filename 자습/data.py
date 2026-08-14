@@ -21,6 +21,7 @@ class Admin:
         self.user_db = {}       # db들은 추후에 수정.(다른 파일과 연동시키기)
         self.book_db  = []
         self.current_user = None  # 현재 이 프로그램에 접속해서 프로그램을 움직이는 Member 객체의 아이디
+        self.character = None
 
 
 
@@ -88,6 +89,4 @@ class Book:
          self.author = author
          self.genre = genre 
          self.who_borrow_this = None       #일단 이 변수는 당장 비었으니까 이런식으로 처리를 해두는게 좋을까.
-         self.character = None             #추후에 확장성을 고려.우선 만들어는 두자.
-                                           #Book class 에 필요한 함수가 뭐가 있을까 ..? 흠 
                                            
